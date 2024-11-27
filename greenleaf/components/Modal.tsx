@@ -1,4 +1,5 @@
 import React from "react";
+import IstemolchiForm from "~/Login and SignUp/Istemolchi";
 
 interface ModalProps {
   content: string;
@@ -10,13 +11,23 @@ const Modal: React.FC<ModalProps> = ({ content, onClose }) => {
   const getForm = (type: string) => {
     switch (type) {
       case 'Istemolchi':
-        return <p>Istemolchi uchun Login shakli!</p>;
+        return (
+          <div>
+            <IstemolchiForm />
+          </div>
+        );
       case 'Sotuvchi' :
-        return <p>Sotuvchi uchun Login shakli!</p>;
+        return (
+          <p>Sotuvchi uchun Login shakli!</p>
+        );
       case 'Marketing':
-        return <p>Marketing uchun Login shakli!</p>;
+        return (
+          <p>Marketing uchun Login shakli!</p>
+        );
       default:
-        return <p>Hech qanday ma'lumot topilmadi.</p>;
+        return (
+          <p>Hech qanday ma'lumot topilmadi.</p>
+        );
     }
   }
 
