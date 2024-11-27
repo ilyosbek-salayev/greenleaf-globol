@@ -13,7 +13,8 @@ const Modal: React.FC<ModalProps> = ({ content, onClose }) => {
       case 'Istemolchi':
         return (
           <div>
-            <IstemolchiForm />
+            {/* <IstemolchiForm onSubmit={IstemolchiForm} /> */}
+            hello istemolchi
           </div>
         );
       case 'Sotuvchi' :
@@ -26,7 +27,7 @@ const Modal: React.FC<ModalProps> = ({ content, onClose }) => {
         );
       default:
         return (
-          <p>Hech qanday ma'lumot topilmadi.</p>
+          <p>Hech qanday malumot topilmadi.</p>
         );
     }
   }
